@@ -14,6 +14,22 @@ public class Address {
         this.zipCode = zipCode;
     }
 
+    public String getStreet()
+    {
+        return this.street;
+    }
+
+    public int getNumber()
+    {
+        return this.number;
+    }
+
+    public String getCity()
+    {
+        return this.city;
+    }
+    
+
     public String toString()
     {
         return "Address: " + this.street + " " + this.number +" " + this.city + " " + this.zipCode;

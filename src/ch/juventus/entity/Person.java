@@ -15,6 +15,26 @@ public class Person
         this.hasPet = hasPet;
     }
 
+    public String getFirstName()
+    {
+        return this.firstName;
+    }
+
+    public String getLastName()
+    {
+        return this.lastName;
+    }
+
+    public int getAge()
+    {
+        return this.age;
+    }
+
+    public boolean hasPet()
+    {
+        return this.hasPet;
+    }
+
     public String toString()
     {
         return "Person: " + this.firstName + " " + this.lastName + ", age " + this.age + " " + (this.hasPet ? "has a pet" : "has no pet");
