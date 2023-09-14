@@ -28,8 +28,12 @@ public class Address {
     {
         return this.city;
     }
-    
 
+    public String getZipCode()
+    {
+        return this.zipCode;
+    }
+    
     public String toString()
     {
         return "Address: " + this.street + " " + this.number +" " + this.city + " " + this.zipCode;
