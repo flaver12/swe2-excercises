@@ -1,6 +1,6 @@
 package ch.juventus.entity;
 
-public class Person
+public class Person implements Comparable<Person>
 {
     private String firstName;
     private String lastName;
@@ -64,5 +64,10 @@ public class Person
     public int hashCode()
     {
         return this.firstName.hashCode() + this.lastName.hashCode() + this.age + (this.hasPet ? 1 : 0);
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return this.lastName.compareTo(o.getLastName());
     }
 }
